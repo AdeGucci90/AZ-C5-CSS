@@ -47,26 +47,39 @@
     }
 
     .container {
-      padding: 20px;
-      
+      padding: 20%;   
     }
-
-    section {
-      
+    
+    section.relative {
+      position: relative;
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 20px;
-      padding: 20px;
-      width: 100%;
+      padding: 20px 
       
     }
- 
-  section > div {
-   background-color: #bdbaba;
-   padding: 15px; /* Padding added to the boxes */
-   border-radius: 0px;
-   text-align: center;
-   } 
+
+    section.relative > div {
+      background-color: #bdbaba;
+      padding: 20px;
+      text-align: center;
+      justify-content: center;
+
+
+    }
+    
+    section.relative .quicklink1{
+      position: relative;
+      margin-bottom: 220px;
+      
+    }
+
+    section.relative .quicklink2{
+      position: relative;
+      left: 669px;
+      bottom: 225px;
+
+    }
 
     footer {
       background-color: #bdbaba;
@@ -77,6 +90,7 @@
       bottom: 3%;
       justify-content: center;
       width: 92%;
+      bottom: 0%;
       
     }
   </style>
@@ -99,27 +113,22 @@
   </nav>
   </div>
 
-  <div class="company">
-    <section>
+    <section class="relative">
       <div>
         <h2>About Us</h2>
         <p>Your company description goes here.</p>
       </div>
-      <div>
+      <div class="quicklink1">
         <h2>Quick Links</h2>
-        <ul>
-          <li><a href="#">Link 1</a></li>
-          <li><a href="#">Link 2</a></li>
-          <li><a href="#">Link 3</a></li>
-        </ul>
+         <p><a href="#">Link 1</a></p>
+         <p><a href="#">Link 2</a></p>
+         <p><a href="#">Link 3</a></p>
       </div>
-      <div>
+      <div class="quicklink2">
         <h2>Quick Links</h2>
-        <ul>
-          <li><a href="#">Link 1</a></li>
-          <li><a href="#">Link 2</a></li>
-          <li><a href="#">Link 3</a></li>
-        </ul>
+        <p><a href="#">Link 1</a></p>
+        <p><a href="#">Link 2</a></p>
+        <p><a href="#">Link 3</a></p>
       </div>
     </div>
 
